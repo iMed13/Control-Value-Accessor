@@ -1,0 +1,15 @@
+<div>
+  <form
+    [formGroup]="form"
+    (submit)="onSubmit()"
+  >
+    <app-input formControlName="inputControl"></app-input>
+    <div style="margin-top: 15px"></div>
+    <button>Log VALUE</button>
+    <div style="margin-top: 15px"></div>
+    <button type="button" (click)="setValue()">Set value "this is default value"</button>
+    <div style="margin-top: 15px"></div>
+    <button type="button" (click)="empty()">Make empty</button>
+  </form>
+
+</div>
